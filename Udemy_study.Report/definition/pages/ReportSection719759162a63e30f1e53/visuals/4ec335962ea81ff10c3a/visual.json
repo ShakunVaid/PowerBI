@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "4ec335962ea81ff10c3a",
+  "position": {
+    "x": 290.90909090909093,
+    "y": 395.63636363636363,
+    "z": 3000,
+    "width": 318.83636363636361,
+    "height": 150.1090909090909
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "PA - Driving Safety"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(PA - Driving Safety.State)"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

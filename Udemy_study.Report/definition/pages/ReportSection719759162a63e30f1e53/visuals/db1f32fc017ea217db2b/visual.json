@@ -1,0 +1,164 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "db1f32fc017ea217db2b",
+  "position": {
+    "x": 677.23636363636365,
+    "y": 297.89090909090908,
+    "z": 4000,
+    "width": 544.58181818181822,
+    "height": 333.96363636363634
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "pvtHPAdmins"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "pvtHPAdmins.Date.Variation.Date Hierarchy.Year",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "Greater Manchester"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.Greater Manchester)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "Merseyside"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.Merseyside)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "South Yorkshire"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.South Yorkshire)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "Tyne and Wear"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.Tyne and Wear)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "West Yorkshire"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.West Yorkshire)"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pvtHPAdmins"
+                        }
+                      },
+                      "Property": "West Midlands"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pvtHPAdmins.West Midlands)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Scalar'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

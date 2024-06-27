@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.0.0/schema.json",
+  "name": "ReportSectionc6a0d42a96d27ca43f8e",
+  "displayName": "Duplicate of excersice",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "pageBinding": {
+    "name": "Pod",
+    "type": "Default",
+    "parameters": []
+  },
+  "visualInteractions": [
+    {
+      "source": "219aa41f2a213ccc3f74",
+      "target": "02b387e920d7d09094e6",
+      "type": "HighlightFilter"
+    },
+    {
+      "source": "02b387e920d7d09094e6",
+      "target": "a047ab79f760001dcb56",
+      "type": "DataFilter"
+    }
+  ]
+}
